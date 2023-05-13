@@ -69,23 +69,23 @@ export default [
     routes: [
       {
         path: '/browser/composition',
-        name: 'Html',
-        component: './Browser/ProHtml',
+        name: '浏览器组成',
+        component: './Browser/BroComposition',
       },
       {
         path: '/browser/render',
-        name: 'Css',
-        component: './Browser/ProCss',
+        name: '浏览器渲染机制',
+        component: './Browser/BroRender',
       },
       {
         path: '/browser/safety',
-        name: 'JavaScript',
-        component: './Browser/ProJs',
+        name: '浏览器安全',
+        component: './Browser/BroSafety',
       },
       {
         path: '/browser/storage',
-        name: 'Vue',
-        component: './Browser/ProVue',
+        name: '存储与缓存',
+        component: './Browser/BroStorageAndCache',
       },
     ],
   },

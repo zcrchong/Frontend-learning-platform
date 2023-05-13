@@ -137,6 +137,12 @@ export default [
     component: './TableList',
   },
   {
+    name: '关于我们',
+    icon: 'table',
+    path: '/aboutAuthor',
+    component: './AboutMe',
+  },
+  {
     path: '/',
     redirect: '/welcome',
   },

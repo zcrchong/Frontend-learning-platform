@@ -89,6 +89,29 @@ export default [
       },
     ],
   },
+  {
+    path: '/cs',
+    name: 'CS基础',
+    icon: 'crown',
+    access: 'canAdmin',
+    routes: [
+      {
+        path: '/cs/operatingSystem',
+        name: '操作系统',
+        component: './CSBasics/OperatingSystem',
+      },
+      {
+        path: '/cs/computerNetwork',
+        name: '计算机网络',
+        component: './CSBasics/ComputerNetwork',
+      },
+      {
+        path: '/cs/algorithm',
+        name: '数据结构与算法',
+        component: './CSBasics/Algorithm',
+      },
+    ],
+  },
 
   {
     path: '/admin',

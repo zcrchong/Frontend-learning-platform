@@ -146,7 +146,38 @@ export default [
     name: '设置',
     icon: 'Setting',
     path: '/setup',
-    component: './Setup',
+    routes: [
+      {
+        path: '/setup/personalInfo',
+        name: '个人信息',
+        component: './Setup/components/PersonalInfoForm',
+      },
+      {
+        path: '/setup/account',
+        name: '账号设置',
+        component: './Setup/components/AccountSettings',
+      },
+      {
+        path: '/setup/message',
+        name: '消息设置',
+        component: './Setup/components/MessageSettings',
+      },
+      {
+        path: '/setup/resume',
+        name: '简历管理',
+        component: './Setup/components/ResumeManage',
+      },
+      {
+        path: '/setup/shield',
+        name: '屏蔽管理',
+        component: './Setup/components/ShieldManage',
+      },
+      {
+        path: '/setup/tag',
+        name: '标签管理',
+        component: './Setup/components/TagManage',
+      },
+    ],
   },
   {
     path: '/',

@@ -31,7 +31,7 @@ export default [
   {
     path: '/language',
     name: '编程语言',
-    icon: 'crown',
+    icon: 'Cluster',
     access: 'canAdmin',
     routes: [
       {
@@ -64,28 +64,51 @@ export default [
   {
     path: '/browser',
     name: '浏览器原理',
-    icon: 'crown',
+    icon: 'Global',
     access: 'canAdmin',
     routes: [
       {
         path: '/browser/composition',
-        name: 'Html',
-        component: './Browser/ProHtml',
+        name: '浏览器组成',
+        component: './Browser/BroComposition',
       },
       {
         path: '/browser/render',
-        name: 'Css',
-        component: './Browser/ProCss',
+        name: '浏览器渲染机制',
+        component: './Browser/BroRender',
       },
       {
         path: '/browser/safety',
-        name: 'JavaScript',
-        component: './Browser/ProJs',
+        name: '浏览器安全',
+        component: './Browser/BroSafety',
       },
       {
         path: '/browser/storage',
-        name: 'Vue',
-        component: './Browser/ProVue',
+        name: '存储与缓存',
+        component: './Browser/BroStorageAndCache',
+      },
+    ],
+  },
+  {
+    path: '/cs',
+    name: 'CS基础',
+    icon: 'Laptop',
+    access: 'canAdmin',
+    routes: [
+      {
+        path: '/cs/operatingSystem',
+        name: '操作系统',
+        component: './CSBasics/OperatingSystem',
+      },
+      {
+        path: '/cs/computerNetwork',
+        name: '计算机网络',
+        component: './CSBasics/ComputerNetwork',
+      },
+      {
+        path: '/cs/algorithm',
+        name: '数据结构与算法',
+        component: './CSBasics/Algorithm',
       },
     ],
   },
@@ -112,6 +135,18 @@ export default [
     icon: 'table',
     path: '/list',
     component: './TableList',
+  },
+  {
+    name: '关于我们',
+    icon: 'Team',
+    path: '/aboutAuthor',
+    component: './AboutMe',
+  },
+  {
+    name: '设置',
+    icon: 'Setting',
+    path: '/setup',
+    component: './Setup',
   },
   {
     path: '/',

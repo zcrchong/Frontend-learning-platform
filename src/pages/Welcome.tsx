@@ -114,7 +114,7 @@ const Welcome: React.FC = () => {
               color: token.colorTextHeading,
             }}
           >
-            欢迎使用 Ant Design Pro
+            欢迎使用 DevDialogue
           </div>
           <p
             style={{
@@ -126,8 +126,8 @@ const Welcome: React.FC = () => {
               width: '65%',
             }}
           >
-            Ant Design Pro 是一个整合了 umi，Ant Design 和 ProComponents
-            的脚手架方案。致力于在设计规范和基础组件的基础上，继续向上构建，提炼出典型模板/业务组件/配套设计资源，进一步提升企业级中后台产品设计研发过程中的『用户』和『设计者』的体验。
+            DevDialogue 是一个基于 Ant Design Pro
+            二次开发的前端学习论坛，旨在为前端开发者提供一个分享知识、交流经验的平台。
           </p>
           <div
             style={{
@@ -139,20 +139,20 @@ const Welcome: React.FC = () => {
             <InfoCard
               index={1}
               href="https://umijs.org/docs/introduce/introduce"
-              title="了解 umi"
-              desc="umi 是一个可扩展的企业级前端应用框架,umi 以路由为基础的，同时支持配置式路由和约定式路由，保证路由的功能完备，并以此进行功能扩展。"
+              title="了解 '前端基础知识'模块"
+              desc="这个功能主要是为新手提供一些基础知识，例如HTML、CSS、JavaScript等等。初学者可以在这里获取一些入门级的知识，帮助大家打好前端基础，从而更好地掌握前端开发相关的技能和知识。"
             />
             <InfoCard
               index={2}
-              title="了解 ant design"
+              title="了解 '程序员交流论坛'模块"
               href="https://ant.design"
-              desc="antd 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。"
+              desc="这个功能主要是为程序员提供一个开放的讨论区，大家可以在这里共同探讨前端开发相关问题。例如，大家可以讨论某个框架的使用、某个库的优缺点等等。这个功能可以帮助程序员们增加交流、提高技能。"
             />
             <InfoCard
               index={3}
-              title="了解 Pro Components"
+              title="了解 '留言评论'模块"
               href="https://procomponents.ant.design"
-              desc="ProComponents 是一个基于 Ant Design 做了更高抽象的模板组件，以 一个组件就是一个页面为开发理念，为中后台开发带来更好的体验。"
+              desc="这个功能主要是给任何人提供一个留言和评论的平台，在帖子下面可以展开评论讨论，与其它用户进行交流沟通。这个功能可以促进用户之间的互动和交流，帮助大家更好地理解和掌握前端开发相关的知识和技能。"
             />
           </div>
         </div>

@@ -31,7 +31,7 @@ export default [
   {
     path: '/language',
     name: '编程语言',
-    icon: 'crown',
+    icon: 'Cluster',
     access: 'canAdmin',
     routes: [
       {
@@ -64,7 +64,7 @@ export default [
   {
     path: '/browser',
     name: '浏览器原理',
-    icon: 'crown',
+    icon: 'Global',
     access: 'canAdmin',
     routes: [
       {
@@ -92,7 +92,7 @@ export default [
   {
     path: '/cs',
     name: 'CS基础',
-    icon: 'crown',
+    icon: 'Laptop',
     access: 'canAdmin',
     routes: [
       {
@@ -138,9 +138,15 @@ export default [
   },
   {
     name: '关于我们',
-    icon: 'table',
+    icon: 'Team',
     path: '/aboutAuthor',
     component: './AboutMe',
+  },
+  {
+    name: '设置',
+    icon: 'Setting',
+    path: '/setup',
+    component: './Setup',
   },
   {
     path: '/',

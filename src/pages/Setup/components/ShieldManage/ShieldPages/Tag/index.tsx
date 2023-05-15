@@ -1,5 +1,15 @@
 import React from 'react';
-const Shield = () => {
-  return <div>屏蔽标签页面</div>;
+import { SmileOutlined } from '@ant-design/icons';
+import { Button, Result } from 'antd';
+
+const App: React.FC = () => {
+  return (
+    <Result
+      icon={<SmileOutlined />}
+      title="您当前并未屏蔽任何标签"
+      extra={<Button type="primary">前往首页</Button>}
+    />
+  );
 };
-export default Shield;
+
+export default App;

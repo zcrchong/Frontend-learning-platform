@@ -1,5 +1,10 @@
+import TagList from '@/pages/Setup/components/TagManage/components/TagList';
 const MenuItemGroup = () => {
-  return <div>全部</div>;
+  return (
+    <div>
+      <TagList />
+    </div>
+  );
 };
 
 export default MenuItemGroup;

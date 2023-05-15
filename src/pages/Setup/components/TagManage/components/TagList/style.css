@@ -1,0 +1,18 @@
+.logo {
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.logo-javascript {
+  background-image: url('https://cdn.worldvectorlogo.com/logos/javascript-1.svg');
+}
+
+.logo-java {
+  background-image: url('https://cdn.worldvectorlogo.com/logos/java-1.svg');
+}
+
+/* 其它语言的 logo 样式 */

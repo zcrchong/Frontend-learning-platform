@@ -1,9 +1,9 @@
 import { Card } from 'antd';
 import MenuItemGroup from '@/pages/Setup/components/ShieldManage/components/Navbar';
 import { useLocation } from 'react-router-dom';
-import Author from '@/pages/Setup/components/ShieldManage/ShieldPages/Author';
-import IM from '@/pages/Setup/components/ShieldManage/ShieldPages/IM';
-import Tag from '@/pages/Setup/components/ShieldManage/ShieldPages/Tag';
+import Author from '@/pages/Setup/components/ShieldManage/pages/Author';
+import IM from '@/pages/Setup/components/ShieldManage/pages/IM';
+import Tag from '@/pages/Setup/components/ShieldManage/pages/Tag';
 const App = () => {
   const location = useLocation(); // 获取当前路由信息
   return (

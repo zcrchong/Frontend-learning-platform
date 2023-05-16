@@ -35,7 +35,6 @@ const Navbar: React.FC = () => {
     getItem('屏蔽管理', '5'),
     getItem('标签管理', '6'),
   ];
-
   return (
     <>
       <Menu

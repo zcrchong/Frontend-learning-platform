@@ -146,7 +146,72 @@ export default [
     name: '设置',
     icon: 'Setting',
     path: '/setup',
-    component: './Setup',
+    routes: [
+      {
+        path: '/setup/personalInfo',
+        name: '个人信息',
+        component: './Setup/components/PersonalInfoForm',
+      },
+      {
+        path: '/setup/account',
+        name: '账号设置',
+        component: './Setup/components/AccountSettings',
+      },
+      {
+        path: '/setup/message',
+        name: '消息设置',
+        component: './Setup/components/MessageSettings',
+      },
+      {
+        path: '/setup/resume',
+        name: '简历管理',
+        component: './Setup/components/ResumeManage',
+      },
+      {
+        path: '/setup/shield',
+        name: '屏蔽管理',
+        component: './Setup/components/ShieldManage',
+        routes: [
+          {
+            path: '/setup/shield/author',
+            name: 'shield-author',
+            component: './Setup/components/ShieldManage/pages/Author',
+            hideInMenu: true, // 隐藏该菜单项
+          },
+          {
+            path: '/setup/shield/im',
+            name: 'shield-im',
+            component: './Setup/components/ShieldManage/pages/IM',
+            hideInMenu: true, // 隐藏该菜单项
+          },
+          {
+            path: '/setup/shield/tag',
+            name: 'shield-tag',
+            component: './Setup/components/ShieldManage/pages/Tag',
+            hideInMenu: true, // 隐藏该菜单项
+          },
+        ],
+      },
+      {
+        path: '/setup/tag',
+        name: '标签管理',
+        component: './Setup/components/TagManage',
+        routes: [
+          {
+            path: '/setup/tag/subscribed',
+            name: 'subscribedTag',
+            component: './Setup/components/TagManage/pages/Subscribed',
+            hideInMenu: true, // 隐藏该菜单项
+          },
+          {
+            path: '/setup/tag/all',
+            name: 'allTag',
+            component: './Setup/components/TagManage/pages/All',
+            hideInMenu: true, // 隐藏该菜单项
+          },
+        ],
+      },
+    ],
   },
   {
     path: '/',

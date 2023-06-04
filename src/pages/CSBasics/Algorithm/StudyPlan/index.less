@@ -1,0 +1,40 @@
+.bookCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-out;
+
+  &:hover {
+    box-shadow: 0 0 10px grey;
+  }
+}
+
+.imageWrapper {
+  width: 30%;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  width: 70%;
+  height: 100%;
+}
+
+.title {
+  margin: 0;
+  font-weight: bold;
+}
+
+.description {
+  margin: 0;
+}

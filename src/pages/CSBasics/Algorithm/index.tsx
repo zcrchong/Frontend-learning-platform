@@ -1,69 +1,64 @@
 import React from 'react';
-import { Card, Avatar, Col, Row } from 'antd';
-const { Meta } = Card;
-const App: React.FC = () => (
-  <Card title="数据结构与算法">
-    <Card
-      style={{ marginTop: 16, width: 1000 }}
-      type="inner"
-      title="推荐"
-      extra={<a href="#">更多</a>}
-    >
-      <Row gutter={[16, 16]}>
-        <Col span={8}>
-          <Card
-            style={{ width: 300 }}
-            cover={
-              <img
-                alt="example"
-                src="https://pic.leetcode.cn/1683280468-quwfIB-%E9%A2%98%E5%BA%93.png?x-oss-process=image%2Fformat%2Cwebp"
-              />
-            }
-          >
-            <Meta
-              avatar={<Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel" />}
-              title="《算法图解》"
-              description="'代码与图相结合，更容易理解'"
-            />
-          </Card>
-        </Col>
-        <Col span={8}>
-          <Card
-            style={{ width: 300 }}
-            cover={
-              <img
-                alt="example"
-                src="https://pic.leetcode.cn/1672972118-VcrUNt-%E9%A2%98%E5%BA%93%20(2).png?x-oss-process=image%2Fformat%2Cwebp"
-              />
-            }
-          >
-            <Meta
-              avatar={<Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel" />}
-              title="《零基础算法100例》"
-              description="'更适合算法小白的算法题'"
-            />
-          </Card>
-        </Col>
-        <Col span={8}>
-          <Card
-            style={{ width: 300 }}
-            cover={
-              <img
-                alt="example"
-                src="https://pic.leetcode.cn/1670420392-HsWoux-20221207-213706.png?x-oss-process=image%2Fformat%2Cwebp"
-              />
-            }
-          >
-            <Meta
-              avatar={<Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel" />}
-              title="《机器学习》"
-              description="'入门机器学习的必备书籍之一'"
-            />
-          </Card>
-        </Col>
-      </Row>
-    </Card>
-  </Card>
-);
+import { Card, Col, Row } from 'antd';
+import BookCard from './StudyPlan/index';
 
-export default App;
+const Books = () => {
+  const books = [
+    {
+      id: 1,
+      title: '悲惨世界',
+      description: '这是一本好书.....',
+      image: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+      href: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+    },
+    {
+      id: 2,
+      title: '悲惨世界',
+      description: '这是一本好书.....',
+      image: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+      href: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+    },
+    {
+      id: 3,
+      title: '悲惨世界',
+      description: '这是一本好书.....',
+      image: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+      href: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+    },
+    {
+      id: 4,
+      title: '悲惨世界',
+      description: '这是一本好书.....',
+      image: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+      href: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+    },
+    {
+      id: 5,
+      title: '悲惨世界',
+      description: '这是一本好书.....',
+      image: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+      href: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+    },
+    {
+      id: 6,
+      title: '悲惨世界',
+      description: '这是一本好书.....',
+      image: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+      href: 'https://assets.leetcode.cn/aliyun-lc-upload/study_plan_v2/premium-algo-100/cover',
+    },
+  ];
+
+  return (
+    <Row>
+      <Card>
+        {books.map((book) => (
+          <Col key={book.id} xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
+            <BookCard {...book} />
+          </Col>
+        ))}
+      </Card>
+    </Row>
+  );
+};
+
+export default Books;
